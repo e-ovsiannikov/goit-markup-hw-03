@@ -29,6 +29,16 @@ ol{
     padding-left: 0;
  }
 
+ img{
+     display: block;
+ }
+
+ .list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
 
 body{
     font-family: var(--font-famaly);
@@ -37,14 +47,49 @@ body{
     letter-spacing: 0.03em;
     font-weight: 400;
 }
-.list{
-    list-style: none;
-}
-.link{
-    text-decoration: none;
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* ==========HEADER=========== */
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ececec;}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.navigation{
+    display: flex;
+    align-items:center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.header-contact{
+    display: flex;
+    align-items: center;
+}
+
+.logo-link{
+    margin-right: 93px;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .logo-link{
     font-family: var(--second-font-famaly);
     font-size: 26px;
@@ -62,7 +107,8 @@ body{
     letter-spacing: 0.02em;
     color: var(--title-color);}
 .contact-link{
-    color:var(--text-color);}
+    color:var(--text-color);
+    margin-right: 50px;}
 
 .menu-link:hover,
 .menu-link:focus{
@@ -83,24 +129,33 @@ body{
 /* ==========HERO=========== */
 .hero{
     background-color:var(--filling-color);
-    text-align: center;
+    padding: 200px 0;
 }
 .hero-title{
+    max-width: 696px;
+    text-align: center;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: var(--hero-color);
+    margin-bottom: 30px;
 }
 .hero-btn{
+    padding: 10px 32px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    align-items: center;
     color: var(--hero-color);
     background: var(--main-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -124,6 +179,7 @@ body{
 
 /* ==========OUR WORKS=========== */
 .section-title{
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -133,11 +189,37 @@ body{
 
 /* ===================TEAM================= */
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team{
+    background-color: #F5F4FA;
+}
+
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.team-list-item{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.team-img{
+    margin-bottom: 30px;
+}
+
 .name-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 10px;
     color: var(--title-color)
 }
 .profession{
@@ -152,8 +234,13 @@ body{
 .footer{
     background: var(--filling-color);
 }
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .contact{
     font-style: normal;
+    margin-top: 20px;
 }
 .log-footer{
     font-family: var(--second-font-famaly);
@@ -169,6 +256,11 @@ body{
     line-height: 1.71;
     color: var(--footer-color);
 }
+
+.footer-contact-link:not(:last-child) {
+    padding-bottom: 9px;
+}
+
 .footer-contact-link{
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
