@@ -55,6 +55,13 @@ body{
     padding-right: 15px;
 }
 
+/* ========COMPONENTS============ */
+
+.block{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* ==========HEADER=========== */
 
 .header {
@@ -112,15 +119,15 @@ body{
 
 .menu-link:hover,
 .menu-link:focus{
-    color: var(--main-accent-color) 
+    color: var(--main-accent-color); 
 }
 .current{
-    color: var(--main-accent-color)
+    color: var(--main-accent-color);
 }
 
 .contact-link:hover,
 .contact-link:focus{
-   color:  var(--main-accent-color)
+   color:  var(--main-accent-color);
 }
 /* ==========END HEADER=========== */
 
@@ -165,10 +172,21 @@ body{
 
 
 /* ==========ADVANTAGES=========== */
+.advantages-list{
+    display: flex;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.advantages-item{
+    margin-left: 30px;
+    margin-top: 30px;
+}
 .advantages-title{
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-color)
+    color: var(--title-color);
+    margin-bottom: 10px;
 }
 .description{
     line-height: 1.71;
@@ -178,22 +196,27 @@ body{
 
 
 /* ==========OUR WORKS=========== */
+.work-list{
+    display: flex;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.work-list-item{
+    margin-left: 30px;
+    margin-top: 30px;
+}
 .section-title{
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    color: var(--title-color)
+    color: var(--title-color);
+    margin-bottom: 50px;
 }
 /* ==========END OUR WORKS=========== */
 
 /* ===================TEAM================= */
-
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .team{
     background-color: #F5F4FA;
 }
@@ -220,7 +243,7 @@ body{
     line-height: 1.19;
     text-align: center;
     margin-bottom: 10px;
-    color: var(--title-color)
+    color: var(--title-color);
 }
 .profession{
     font-size: 16px;
@@ -249,7 +272,7 @@ body{
     color: var(--footer-color);
 }
 .low-web{
-    color: var(--main-accent-color)
+    color: var(--main-accent-color);
 }
 
 .contact-item-link{
@@ -273,13 +296,36 @@ body{
 
 
 /* ===============PORTFOLIO PROJECT================= */
+.project{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.header-port{
+    border-bottom: 1px solid #ececec;
+    width: 1600px;
+    height: 80px;
+}
+.project-btn{
+    display: flex;
+    justify-content: center;
+}
 .btn-list{
     font-family: var(--font-famaly);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16px ;
     line-height: 1.62;
     color:var(--title-color);
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+.btn-items{
+    margin-bottom: 50px;
+    margin-right: 8px;
+}
+
+.btn-items:not(:last-child) {
+    margin-right: 8px;
 }
 
 .btn-list:hover,
@@ -288,17 +334,38 @@ body{
     color:var(--accent-color);
 }
 
+.project-list{
+   display: flex;
+   flex-wrap: wrap;
+   flex-basis: calc((100% - 90px) / 3);
+   margin-left: -30px;
+   margin-top: -30px;
+   align-content: center; 
+}
+
+.project-item{
+    margin-left: 30px;
+    margin-top: 30px; 
+}
+
+.project-content{
+    border: 1px solid #EEEEEE; 
+}
+
 .project-title{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-color)
+    color: var(--title-color);
+    margin-bottom: 4px;
+}
+.project-icon{
+    margin-bottom: 20px;
 }
 
 .project-description{
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.87px;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 /* ===============END PORTFOLIO PROJECT================= */
