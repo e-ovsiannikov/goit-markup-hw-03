@@ -65,8 +65,8 @@ body{
 /* ==========HEADER=========== */
 
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ececec;}
 
 .header-container{
@@ -309,8 +309,6 @@ body{
 }
 .header-port{
     border-bottom: 1px solid #ececec;
-    width: 1600px;
-    height: 80px;
 }
 .project-btn{
     display: flex;
@@ -358,7 +356,7 @@ body{
 
 .project-content{
     border: 1px solid #EEEEEE;
-    margin-bottom: 20px; 
+    padding: 20px 24px; 
 }
 
 .project-title{
